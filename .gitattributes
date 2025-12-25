@@ -1,0 +1,8 @@
+# Ensure images are tracked as binary files
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.webp binary
+*.pdf binary
+

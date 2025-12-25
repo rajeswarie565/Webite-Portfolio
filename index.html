@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Your Name</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" id="home">
+      <nav class="nav">
+        <div class="nav__brand">Your<span> Name</span></div>
+        <button class="nav__toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav__links">
+          <li><a href="#home" class="nav__link active">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero">
+        <div class="hero__content">
+          <p class="hero__greeting">Hi, I'm</p>
+          <h1 class="hero__title">Your Name</h1>
+          <p class="hero__subtitle">Front-End Developer | Problem Solver</p>
+          <p class="hero__text">
+            I build clean, responsive, and user-friendly web experiences using
+            HTML, CSS, and JavaScript.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="RESUME NEW.pdf" target="_blank" class="btn btn--secondary"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+        <div class="hero__image-wrapper">
+          <img
+            src="./images/profile.jpg"
+            alt="Profile picture of Your Name"
+            class="hero__image"
+          />
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- About Section -->
+      <section class="section section--alt" id="about">
+        <div class="section__inner">
+          <h2 class="section__title">About Me</h2>
+          <p class="section__subtitle">
+            A quick overview of who I am and what I do.
+          </p>
+          <div class="about">
+            <div class="about__content">
+              <h3>Who I Am</h3>
+              <p>
+                I am an aspiring software developer with a passion for building
+                modern, responsive websites. I enjoy learning new technologies
+                and applying them to real-world projects.
+              </p>
+              <p>
+                This portfolio is built using pure HTML, CSS, and JavaScript to
+                demonstrate my understanding of core web technologies.
+              </p>
+            </div>
+            <div class="about__grid">
+              <div class="about__card">
+                <h4>Education</h4>
+                <ul>
+                  <li>Bachelor of Technology in Computer Science</li>
+                  <li>University / College Name</li>
+                  <li>Year of Graduation: 20XX</li>
+                </ul>
+              </div>
+              <div class="about__card">
+                <h4>Experience</h4>
+                <ul>
+                  <li>Intern - Front-End Development</li>
+                  <li>Freelance web projects</li>
+                  <li>Academic projects in web development</li>
+                </ul>
+              </div>
+              <div class="about__card">
+                <h4>Hobbies</h4>
+                <ul>
+                  <li>Coding and problem solving</li>
+                  <li>Reading tech blogs</li>
+                  <li>Designing UI mockups</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section" id="projects">
+        <div class="section__inner">
+          <h2 class="section__title">Projects</h2>
+          <p class="section__subtitle">
+            Some of the projects I have worked on recently.
+          </p>
+
+          <div class="projects">
+            <div class="projects__gallery">
+              <article class="project-card" data-project="1">
+                <div class="project-card__image-wrapper">
+                  <img
+                    src="./images/project1.jpg"
+                    alt="Phishing Detection with Python"
+                    class="project-card__image"
+                  />
+                </div>
+                <div class="project-card__body">
+                  <h3 class="project-card__title">Phishing Detection with Python</h3>
+                  <p class="project-card__text">
+                    A Python-based security application that detects and prevents phishing attacks using machine learning algorithms and URL analysis.
+                  </p>
+                  <button class="btn btn--ghost project-card__btn">
+                    View Details
+                  </button>
+                </div>
+              </article>
+
+              <article class="project-card" data-project="2">
+                <div class="project-card__image-wrapper">
+                  <img
+                    src="./images/project2.jpg"
+                    alt="Figma Project UI Design"
+                    class="project-card__image"
+                  />
+                </div>
+                <div class="project-card__body">
+                  <h3 class="project-card__title">Figma Project UI Design</h3>
+                  <p class="project-card__text">
+                    A modern and intuitive user interface design created in Figma, focusing on user experience and visual aesthetics.
+                  </p>
+                  <button class="btn btn--ghost project-card__btn">
+                    View Details
+                  </button>
+                </div>
+              </article>
+
+              <article class="project-card" data-project="3">
+                <div class="project-card__image-wrapper">
+                  <img
+                    src="./images/project3.jpg"
+                    alt="Ultrasonic Glass For Blind"
+                    class="project-card__image"
+                  />
+                </div>
+                <div class="project-card__body">
+                  <h3 class="project-card__title">Ultrasonic Glass For Blind</h3>
+                  <p class="project-card__text">
+                    An assistive technology device using ultrasonic sensors to help visually impaired individuals navigate their surroundings safely.
+                  </p>
+                  <button class="btn btn--ghost project-card__btn">
+                    View Details
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <!-- Simple image slider -->
+            <div class="projects__slider">
+              <button class="slider__btn slider__btn--prev" aria-label="Prev">
+                &#10094;
+              </button>
+              <div class="slider__window">
+                <div class="slider__track">
+                  <img
+                    src="./images/slider1.jpg"
+                    alt="Project screenshot 1"
+                    class="slider__image"
+                  />
+                  <img
+                    src="./images/slider2.jpg"
+                    alt="Project screenshot 2"
+                    class="slider__image"
+                  />
+                  <img
+                    src="./images/slider3.jpg"
+                    alt="Project screenshot 3"
+                    class="slider__image"
+                  />
+                </div>
+              </div>
+              <button class="slider__btn slider__btn--next" aria-label="Next">
+                &#10095;
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section section--alt" id="contact">
+        <div class="section__inner">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__subtitle">
+            Feel free to reach out to me for collaboration or opportunities.
+          </p>
+
+          <div class="contact">
+            <form class="contact__form" id="contactForm" novalidate>
+              <div class="form__group">
+                <label for="name">Name<span>*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                />
+                <p class="form__error" data-error-for="name"></p>
+              </div>
+
+              <div class="form__group">
+                <label for="email">Email<span>*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+                <p class="form__error" data-error-for="email"></p>
+              </div>
+
+              <div class="form__group">
+                <label for="subject">Subject<span>*</span></label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject of your message"
+                  required
+                />
+                <p class="form__error" data-error-for="subject"></p>
+              </div>
+
+              <div class="form__group">
+                <label for="message">Message<span>*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+                <p class="form__error" data-error-for="message"></p>
+              </div>
+
+              <button type="submit" class="btn btn--primary">Send Message</button>
+              <p class="form__success" id="formSuccess"></p>
+            </form>
+
+            <div class="contact__info">
+              <h3>Other ways to reach me</h3>
+              <ul>
+                <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                <li>Phone: +91-XXXXXXXXXX</li>
+                <li>
+                  LinkedIn:
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >linkedin.com/in/your-profile</a
+                  >
+                </li>
+                <li>
+                  GitHub:
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >github.com/your-username</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Project modal -->
+    <div class="modal" id="projectModal" aria-hidden="true">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Close modal">&times;</button>
+        <h3 class="modal__title">Project Title</h3>
+        <p class="modal__description">
+          Detailed project description will appear here.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
